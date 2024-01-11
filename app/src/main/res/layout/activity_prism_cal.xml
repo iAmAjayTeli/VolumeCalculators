@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    android:orientation="vertical"
+    tools:context=".Calculation.PrismCal">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Prism Volume Calculator"
+        android:textColor="@color/white"
+        android:textSize="25dp"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/heading"
+        android:layout_margin="25dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/BaseArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_back"
+            android:hint="Base Area"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="#A6FFFFFF"></EditText>
+
+        <EditText
+            android:id="@+id/height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_back"
+            android:hint="Height"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="#A6FFFFFF"></EditText>
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Find"
+            android:textSize="18dp"></Button>
+
+        <TextView
+            android:id="@+id/ans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textIsSelectable="true"
+            android:textSize="17dp"></TextView>
+
+    </LinearLayout>
+
+</LinearLayout>
